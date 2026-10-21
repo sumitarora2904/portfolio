@@ -122,15 +122,31 @@ function Reveal({ children, className = '', delay = 0 }: { children: ReactNode; 
   )
 }
 
-function SectionHeading({ index, eyebrow, title, copy }: { index: string; eyebrow: string; title: string; copy?: string }) {
+
+function SectionHeading({
+  index,
+  eyebrow,
+  title,
+  copy,
+}: {
+  index: string
+  eyebrow: string
+  title: ReactNode
+  copy?: string
+}) {
   return (
     <div className="section-heading">
-      <div className="eyebrow"><span>{index}</span><i />{eyebrow}</div>
+      <div className="eyebrow">
+        <span>{index}</span>
+        <i />
+        {eyebrow}
+      </div>
       <h2>{title}</h2>
       {copy && <p>{copy}</p>}
     </div>
   )
 }
+
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
