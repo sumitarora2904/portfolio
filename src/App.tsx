@@ -193,7 +193,7 @@ export default function App() {
               <a className="button button-quiet" href="/assets/Sumit_Arora.pdf" download><Download size={16} /> Download resume</a>
             </motion.div>
             <motion.div className="hero-meta" initial={reduced ? false : { opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1 }}>
-              <span><b>4+</b> years of experience*</span><span className="meta-divider" /><span>Jalandhar · Mohali region</span>
+              <span><b>5+</b> years of experience*</span><span className="meta-divider" /><span>Jalandhar · Punjab region</span>
             </motion.div>
           </div>
 
